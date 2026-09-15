@@ -1,7 +1,6 @@
 ---
 name: rezi-resume
 description: Work with a user's Rezi resumes by listing available resumes, reading one safely, suggesting improvements, tailoring content to a job description, and creating or updating a resume only after explicit approval.
-argument-hint: "[resume task or job description]"
 ---
 
 Use the Rezi MCP tools provided by this plugin source. Tool names may include a namespace in some clients.
