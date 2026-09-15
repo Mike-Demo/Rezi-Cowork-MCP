@@ -16,5 +16,15 @@
     "mcp"
   ],
   "skills": "skills",
-  "mcpServers": ".mcp.json"
+  "mcpServers": ".mcp.json",
+  "x-microsoft-365-agents-toolkit": {
+    "agentConnectors": {
+      "rezi": {
+        "authorization": {
+          "type": "OAuthPluginVault",
+          "referenceId": "REPLACE_WITH_MICROSOFT_PLUGIN_VAULT_REFERENCE_ID"
+        }
+      }
+    }
+  }
 }

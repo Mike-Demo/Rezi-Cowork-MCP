@@ -88,7 +88,7 @@ After import:
 1. Open the generated Microsoft 365 Agents Toolkit project.
 2. Review the generated agent connector for the Rezi MCP server.
 3. Supply your real privacy and terms URLs in the import command if you used placeholders.
-4. Register the generated **placeholder** Microsoft plugin-vault/auth reference ID in your Microsoft environment before use.
+4. Replace `REPLACE_WITH_MICROSOFT_PLUGIN_VAULT_REFERENCE_ID` from `.plugin/plugin.json` with your real Microsoft plugin-vault/auth registration reference ID during Microsoft-side setup.
 5. If automatic auth detection is unavailable in your environment, rerun the import with:
 
 ```bash
@@ -100,7 +100,7 @@ atk import openplugin \
   --default-auth-type OAuthPluginVault
 ```
 
-The importer can generate a placeholder auth reference ID, but the real Microsoft-side registration must be completed manually.
+The placeholder auth reference ID in `.plugin/plugin.json` is intentionally not a real registration and must be replaced during Microsoft-side setup.
 
 ## Validation target
 
