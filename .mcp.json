@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "rezi": {
+      "type": "http",
+      "transport": "streamable-http",
+      "url": "https://api.rezi.ai/mcp",
+      "description": "Remote Rezi MCP server for user-scoped resume access."
+    }
+  }
+}
