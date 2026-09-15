@@ -1,0 +1,30 @@
+{
+  "name": "rezi-cowork",
+  "version": "1.0.0",
+  "description": "Connect to the Rezi remote MCP server to list, read, review, tailor, create, and update resumes.",
+  "author": {
+    "name": "Mike-Demo",
+    "url": "https://github.com/Mike-Demo"
+  },
+  "homepage": "https://github.com/Mike-Demo/Rezi-Cowork-MCP",
+  "repository": "https://github.com/Mike-Demo/Rezi-Cowork-MCP",
+  "keywords": [
+    "rezi",
+    "copilot",
+    "cowork",
+    "resume",
+    "mcp"
+  ],
+  "skills": "skills",
+  "mcpServers": ".mcp.json",
+  "x-microsoft-365-agents-toolkit": {
+    "agentConnectors": {
+      "rezi": {
+        "authorization": {
+          "type": "OAuthPluginVault",
+          "referenceId": "REPLACE_WITH_MICROSOFT_PLUGIN_VAULT_REFERENCE_ID"
+        }
+      }
+    }
+  }
+}
