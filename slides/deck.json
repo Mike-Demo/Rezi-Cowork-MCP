@@ -1,0 +1,230 @@
+{
+  "boltSlidesVersion": 1,
+  "deck": {
+    "title": "Rezi Cowork MCP",
+    "transition": "fade",
+    "font": "sora",
+    "accent": "#FF5346"
+  },
+  "slides": [
+    {
+      "id": "s1",
+      "position": 0,
+      "layout": "cover",
+      "props": {
+        "kicker": "Open source · MCP server",
+        "title": "Rezi Cowork MCP — your resume, ==in the room where the work happens.==",
+        "subtitle": "Rezi resume workflows, native to your AI cowork sessions.",
+        "foot": "github.com/Mike-Demo/rezi-cowork-mcp"
+      },
+      "background": {
+        "type": "gradient",
+        "from": "#06080d",
+        "to": "#170a0a",
+        "angle": 160
+      },
+      "animation": "cascade",
+      "transition": null,
+      "nav": null,
+      "notes": "Hook: the resume tool and the AI session where you actually work are usually two different rooms. This project makes them one.",
+      "status": "none"
+    },
+    {
+      "id": "s2",
+      "position": 1,
+      "layout": "statement",
+      "props": {
+        "kicker": "The problem",
+        "title": "Job applications are ==assembled across tabs.==",
+        "body": "The job post in one, the resume builder in another, the AI assistant in a third — and the context that makes a tailored application good gets lost in the copy-paste between them."
+      },
+      "background": { "type": "color", "color": "var(--bg)" },
+      "animation": "cascade",
+      "transition": null,
+      "nav": null,
+      "notes": "Walk the three-tab story: job post, resume builder, AI assistant. The friction isn't any one tool — it's the handoffs between them.",
+      "status": "none"
+    },
+    {
+      "id": "s3",
+      "position": 2,
+      "layout": "pillars",
+      "props": {
+        "title": "Rezi, ==exposed to your agent.==",
+        "items": [
+          {
+            "title": "Create",
+            "body": "Start a new resume from scratch, right inside the cowork session."
+          },
+          {
+            "title": "Tailor",
+            "body": "Adapt your master resume to the exact posting being analyzed."
+          },
+          {
+            "title": "Review",
+            "body": "Run Rezi's resume checks without ever leaving the chat."
+          }
+        ]
+      },
+      "background": { "type": "color", "color": "var(--bg)" },
+      "animation": "cascade",
+      "transition": null,
+      "nav": null,
+      "notes": "An MCP server that exposes Rezi to AI agents and cowork tools — create, tailor, and review all happen where the role analysis happens.",
+      "status": "none"
+    },
+    {
+      "id": "s4",
+      "position": 3,
+      "layout": "steps",
+      "props": {
+        "kicker": "How it works",
+        "title": "Posting to tailored resume, ==in one session.==",
+        "items": [
+          {
+            "title": "Connect",
+            "body": "The agent connects to Rezi over MCP."
+          },
+          {
+            "title": "Pull",
+            "body": "It reads your master resume."
+          },
+          {
+            "title": "Tailor",
+            "body": "It drafts a copy tuned to the posting."
+          },
+          {
+            "title": "Review",
+            "body": "It checks the result back — you approve before anything is submitted."
+          }
+        ]
+      },
+      "background": { "type": "color", "color": "var(--bg)" },
+      "animation": "cascade",
+      "transition": null,
+      "nav": null,
+      "notes": "Emphasize the last step: the agent never submits on its own. The human reviews and approves — always.",
+      "status": "none"
+    },
+    {
+      "id": "s5",
+      "position": 4,
+      "layout": "contrast",
+      "props": {
+        "kicker": "Why MCP",
+        "title": "One standard beats a ==bespoke integration.==",
+        "left": {
+          "label": "Without",
+          "title": "Per-app integrations",
+          "points": [
+            "A custom build for every assistant app",
+            "Resume data exported and scattered",
+            "Breaks when either side changes"
+          ]
+        },
+        "right": {
+          "label": "With",
+          "title": "The MCP protocol",
+          "points": [
+            "Any MCP-capable assistant can drive the workflow",
+            "The resume stays in Rezi where it belongs",
+            "Works with the tools you already use"
+          ]
+        }
+      },
+      "background": { "type": "color", "color": "var(--bg)" },
+      "animation": "cascade",
+      "transition": null,
+      "nav": null,
+      "notes": "MCP is the tool protocol point: build once against the standard, and every MCP-capable assistant can use it. Data stays in Rezi.",
+      "status": "none"
+    },
+    {
+      "id": "s6",
+      "position": 5,
+      "layout": "bento",
+      "props": {
+        "kicker": "Key features",
+        "title": "Everything the agent needs.",
+        "tiles": [
+          {
+            "k": "01",
+            "title": "Full workflow access",
+            "body": "Create, tailor, and review resumes through simple tool calls.",
+            "c": 3,
+            "variant": "accent"
+          },
+          {
+            "k": "02",
+            "title": "One source of truth",
+            "body": "The agent reads your canonical Rezi resume — never a stale export.",
+            "c": 3
+          },
+          {
+            "k": "03",
+            "title": "Human in the loop",
+            "body": "Drafts come back for review. Nothing is submitted without your approval.",
+            "c": 2
+          },
+          {
+            "k": "04",
+            "title": "Any MCP client",
+            "body": "Cowork tools, IDEs, and assistants that speak MCP.",
+            "c": 2
+          },
+          {
+            "k": "05",
+            "title": "Session-native",
+            "body": "Role analysis and resume editing share one context window.",
+            "c": 2
+          }
+        ]
+      },
+      "background": { "type": "color", "color": "var(--bg)" },
+      "animation": "cascade",
+      "transition": null,
+      "nav": null,
+      "notes": "Pick two tiles to speak to — full workflow access and human-in-the-loop are the differentiators. Let the rest be read.",
+      "status": "none"
+    },
+    {
+      "id": "s7",
+      "position": 6,
+      "layout": "statement",
+      "props": {
+        "kicker": "Status",
+        "title": "==Working server. Open source.==",
+        "body": "The server runs today and the code is public — clone it, run it, and connect your first cowork session."
+      },
+      "background": { "type": "color", "color": "var(--bg)" },
+      "animation": "fade",
+      "transition": null,
+      "nav": null,
+      "notes": "Not a concept: a working server you can run today, open source on GitHub. Land this quietly and let it sit.",
+      "status": "none"
+    },
+    {
+      "id": "s8",
+      "position": 7,
+      "layout": "cover",
+      "props": {
+        "kicker": "Rezi Cowork MCP",
+        "title": "Put your resume ==in the room.==",
+        "subtitle": "github.com/Mike-Demo/rezi-cowork-mcp — star it, run it, and ship your next application from one session.",
+        "foot": "github.com/Mike-Demo/rezi-cowork-mcp"
+      },
+      "background": {
+        "type": "gradient",
+        "from": "#06080d",
+        "to": "#170a0a",
+        "angle": 160
+      },
+      "animation": "cascade",
+      "transition": "zoom",
+      "nav": null,
+      "notes": "Close with the repo link and one call to action: run it against your next application.",
+      "status": "none"
+    }
+  ],
+  "boltSlidesId": "11011050-f9d6-4d43-8a9e-3e43af51bbaf"
+}
